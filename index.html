@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  </head>
+  <body>
+    <script type="text/javascript">
+      prompt("What is your name?");
+      prompt("What is your crush name?");
+      var lovescore = Math.random() * 100;
+      lovescore = Math.floor(lovescore)+1;
+      alert("Your love score is  "+ lovescore+ "%");
+      var items = [1,2,4,2,5,5];
+      function sorta(items){
+        return items.filter((value,index)=>{
+          return items.indexOf(value)===index;
+        });
+
+      }
+      var b = sorta(items);
+      console.log(b);
+
+    </script>
+
+  </body>
+</html>
